@@ -12,7 +12,10 @@ function App() {
       <GameStatusProvider>
         <div className="wrapper">
           <Toaster />
+       
+     
           <Header />
+ 
           <Game />
         </div>
       </GameStatusProvider>

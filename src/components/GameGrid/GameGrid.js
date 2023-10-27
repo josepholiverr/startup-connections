@@ -48,36 +48,11 @@ export function SolvedWordRow({ ...props }) {
   const isImageAvailable = props.imageSrc != null;
   return (
     <animated.div style={springProps}>
-      {!isImageAvailable ? (
-        <div style={{ backgroundColor: color, borderRadius: 8 }}>
-          <p className="font-bold pt-2 pl-4">{props.category}</p>
-          <p className="font-thin pb-2 pl-4">{props.words.join(", ")}</p>
-        </div>
-      ) : (
-        <Popover>
-          <PopoverTrigger asChild>
-            <div
-              className="cursor-pointer hover:animate-pulse shadow-md"
-              style={{ backgroundColor: color, borderRadius: 8 }}
-              onClick={() => setHasBeenClicked(true)}
-            >
-              {!hasBeenClicked && (
-                <Badge className="animate-pulse absolute top-0 right-0 mr-2 mt-2">
-                  View More
-                </Badge>
-              )}
-              <p className="font-bold pt-2 pl-4">{props.category}</p>
-              <p className="font-thin pb-2 pl-4">{props.words.join(", ")}</p>
-            </div>
-          </PopoverTrigger>
-          <PopoverContent>
-            <div>
-              <img src={props.imageSrc} />
-            </div>
-          </PopoverContent>
-        </Popover>
-      )}
-    </animated.div>
+    <div style={{ backgroundColor: color, borderRadius: 8 }}>
+      <p className="font-bold pt-2 pl-4 text-center">{props.category}</p>
+      <p className="font-thin pb-2 pl-4 text-center">{props.words.join(", ")}</p>
+    </div>
+  </animated.div>
   );
 }
 

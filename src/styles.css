@@ -41,11 +41,12 @@ header {
   display: flex;
   height: var(--header-height);
   border-bottom: 1px solid var(--color-gray-700);
+  border-top: 1px solid var(--color-gray-700);
   color: var(--color-gray-300);
 }
 
 header .side {
-  width: var(--header-height);
+ 
   display: grid;
   place-content: center;
 }
@@ -122,4 +123,100 @@ h1 {
   to {
     transform: translateY(0%);
   }
+}
+.help-emojis {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.help-arrow {
+  height: 2.2rem;
+  left: 2.6rem;
+  bottom: 1.4rem;
+  position: absolute;
+}
+.help-emoji.group-0 {
+  background-color: var(--group-0-color);
+}
+.help-emoji {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  border-radius: 2px;
+  margin-bottom: 1.5px;
+}
+.help-emoji.group-1 {
+  background-color: var(--group-1-color);
+
+ 
+}.help-emoji.group-2 {
+  background-color: var(--group-2-color);
+
+}.help-emoji.group-3 {
+  background-color: var(--group-3-color);
+}
+:root {
+  --yellow: #f9df6d;
+  --green: #a0c35a;
+  --blue: #b0c4ef;
+  --purple: #ba81c5;
+  --group-0-color: var(--yellow);
+  --group-1-color: var(--green);
+  --group-2-color: var(--blue);
+  --group-3-color: var(--purple);
+  --red: rgb(255, 103, 103);
+  --orange: #f8a765;
+  --main-game-color: #b4a8ff;
+  --selected-color: #5a594e;
+  --incorrect-color: rgb(90 89 78 / 75%);
+  --light-grey: rgb(212, 212, 212);
+  --grey: #e2e2e2;
+  --ui-grey: #7f7f7f;
+  --item-grey: #efefe6;
+  --top-section-desktop-height: 233.5px;
+  --top-section-mobile-height: 46px;
+  --contrast-yellow: #f9df6d;
+  --contrast-green: #a0c35a;
+  --contrast-blue: #b0c4ef;
+  --contrast-purple: #ba81c5;
+  --group-0-color: var(--yellow);
+  --group-1-color: var(--green);
+  --group-2-color: var(--blue);
+  --group-3-color: var(--purple);
+}
+.help-emojis > div {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+}
+.pz-game-title-bar {
+  
+  padding-bottom: 4px;
+}
+.pz-row {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 12px;
+}
+.pz-row, .pz-col {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  min-height: 1px;
+  flex: 1 1 0%;
+}.pz-module {
+  flex: 1 1 auto;
+  margin: 12px;
+}.pz-game-title-bar .pz-game-title {
+
+  font-size: 32px;
+  font-style: normal; 
+  font-weight: bold;
+ 
+  margin-right: 16px;
+}.pz-game-title-bar .pz-game-date {
+  
+  font-style: light;
+  font-size: 18px;
+  font-weight: 300;
 }

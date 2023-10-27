@@ -2,7 +2,7 @@ import { UAParser } from "ua-parser-js";
 
 import { GAME_TITLE } from "./constants";
 import { puzzleIndex } from "./time-utils";
-import { generateEmojiGrid } from "./game-helpers";
+import { generateEmojiGrid, generateEmojiString } from "./game-helpers";
 
 // Share logic from here: https://github.com/cwackerfuss/react-wordle/blob/main/src/lib/share.ts
 const webShareApiDeviceTypes = ["mobile", "smarttv", "wearable"];
@@ -15,12 +15,12 @@ export const shareStatus = (
   submittedGuesses,
   handleShareToClipboard,
   handleShareFailure,
-  includeGameLink = true
+  includeGameLink = true,
 ) => {
   const GAME_URL = window.location.href;
   const textToShare =
     `${GAME_TITLE} #${puzzleIndex}\n\n` +
-    generateEmojiGrid(gameData, submittedGuesses, true) +
+    generateEmojiString(gameData, submittedGuesses, true) +
     `${includeGameLink ? "\n\n" + GAME_URL : ""}`;
 
   const shareData = { text: textToShare };

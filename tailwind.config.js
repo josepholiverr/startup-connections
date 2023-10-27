@@ -18,6 +18,12 @@ module.exports = {
           '100': '#5a594e',
           '150': '#d1d0b6',
         },
+        colors:{
+          "10": '#f9df6d',
+  "20": '#a0c35a',
+  "30": '#b0c4ef',
+  "40": '#ba81c5'
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

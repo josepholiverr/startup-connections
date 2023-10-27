@@ -16,13 +16,15 @@ function GameWonModal({ open, submittedGuesses }) {
       footerElements={<ShareScoreButton />}
       showActionButton={false}
     >
-      <p>{"Great job, share your results!"}</p>
-      <div className="justify-center">
-        {/* the whitespace: pre style makes the emoji grid appear with new lines character */}
-        <span className="text-center whitespace-pre">
-          {"\n"}
-          {generateEmojiGrid(gameData, submittedGuesses)}
-        </span>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        <p>{"Great job, share your results!"}</p>
+        <div className="justify-center">
+          {/* the whitespace: pre style makes the emoji grid appear with new lines character */}
+          <span className="text-center whitespace-pre">
+            {"\n"}
+            {generateEmojiGrid(gameData, submittedGuesses)}
+          </span>
+        </div>
         <CountdownToNextPuzzle />
       </div>
     </BaseModal>

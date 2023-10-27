@@ -22,7 +22,7 @@ function ViewResultsModal() {
       showActionButton={false}
       footerElements={<ShareScoreButton buttonText={"Share Your Score!"} />}
     >
-      <div className="flex flex-col place-content-center">
+       <div className="flex flex-col items-center justify-center place-content-center">
         <p className="text-center font-[600]">
           Your Guesses Are Represented Below
         </p>

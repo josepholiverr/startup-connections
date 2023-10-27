@@ -25,34 +25,44 @@ function InfoModal() {
         </TabsList>
         <TabsContent value="how-to-play">
           {" "}
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="item-1">
-              <AccordionTrigger>What's The Goal?</AccordionTrigger>
-              <AccordionContent>
-                Find groups of items or names that share something in common.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger>How Do I Play?</AccordionTrigger>
-              <AccordionContent>
-                Select the items and tap 'Submit' to check if your guess matches
-                one of the answer categories.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger>How Many Tries Do I Get?</AccordionTrigger>
-              <AccordionContent>
-                {`You can make ${MAX_MISTAKES} mistakes before the game ends.`}
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+
+          <h2 className="font-bold mt-4">Find groups of four items that share something in common.</h2>
+          <ul style={{ listStyleType: 'disc' }}>
+            <li className="ml-4">Select four items and tap 'Submit' to check if your guess is correct.</li>
+            <li className="ml-4">Find the groups without making 4 mistakes!</li>
+          </ul>
+          <h2 className="font-bold mt-4">Find groups of four items that share something in common.</h2>
+          <ul style={{ listStyleType: 'disc' }}>
+            <li className="ml-4">Select four items and tap 'Submit' to check if your guess is correct.</li>
+            <li className="ml-4">Find the groups without making 4 mistakes!</li>
+          </ul>
+          <p className="mt-4">Each group is assigned a color, which will be revealed as you solve: </p>
+
+          <div class="flex flex-col help-emojis mt-0.5 ml-4">
+            <div class="inline-flex items-center h-5">
+              <span className="help-emoji group-0 font-bold"></span> Straightforward
+            </div>
+            <div class="inline-flex items-center h-5">
+              <span className="help-emoji group-1"></span>
+            </div>
+            <div class="inline-flex items-center h-5">
+              <span className="help-emoji group-2"></span>
+            </div>
+            <div class="relative inline-flex items-center h-5">
+              <img
+                id="help-arrow"
+                class="h-[2.2rem] left-[1.5rem] bottom-[1.4rem] absolute"
+                src="https://www.nytimes.com/games-assets/v2/metadata/help_arrow.svg"
+                alt="levels description arrow"
+              />
+              <span className="help-emoji group-3 font-bold"></span> Tricky
+            </div>
+          </div>
+
         </TabsContent>
         <TabsContent value="about-us">
           {" "}
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="item-1">
-              <AccordionTrigger>Who Are Y'all?</AccordionTrigger>
-              <AccordionContent>
+          
                 This project is brought to you by andcomputers, feel free to
                 subscribe to our writing and other experiments.{" "}
                 <a
@@ -62,11 +72,8 @@ function InfoModal() {
                 >
                   Check out our writing here.
                 </a>
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger>How Can I Support?</AccordionTrigger>
-              <AccordionContent>
+           
+           
                 <p className="mb-1">If you'd like to support feel free!</p>
                 <ul className="list-disc">
                   <li>
@@ -107,13 +114,7 @@ function InfoModal() {
                     </ul>
                   </li>
                 </ul>
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger>
-                Any Other Projects to Check Out?
-              </AccordionTrigger>
-              <AccordionContent>
+           
                 <div className="grid grid-flow-row">
                   <p>Just a few! </p>
                   <a
@@ -138,9 +139,7 @@ function InfoModal() {
                     - Black Wordle
                   </a>
                 </div>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+             
         </TabsContent>
       </Tabs>
     </BaseModal>

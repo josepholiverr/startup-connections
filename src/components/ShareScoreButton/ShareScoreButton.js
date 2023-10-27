@@ -7,7 +7,7 @@ import { shareStatus } from "../../lib/share-game";
 import { GameStatusContext } from "../../providers/GameStatusProvider";
 import { PuzzleDataContext } from "../../providers/PuzzleDataProvider";
 
-function ShareScoreButton({ buttonText = "Share", className = "" }) {
+function ShareScoreButton({ buttonText = "Share Score", className = "" }) {
   const { gameData } = React.useContext(PuzzleDataContext);
   const { submittedGuesses } = React.useContext(GameStatusContext);
   const { toast } = useToast();
@@ -28,7 +28,7 @@ function ShareScoreButton({ buttonText = "Share", className = "" }) {
   return (
     <Sparkles>
       <Button
-        className={cn(className, "w-full")}
+        className={cn(className, "w-full rounded-md p-6 font-bold")}
         variant="share"
         onClick={() =>
           shareStatus(

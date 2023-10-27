@@ -42,7 +42,8 @@ function BaseModal({
         }}
       >
         <AlertDialogHeader>
-          <AlertDialogTitle>{title}</AlertDialogTitle>
+        <AlertDialogTitle style={{ textAlign: 'center' }}>{title}</AlertDialogTitle>
+
           <AlertDialogDescription>{children}</AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>

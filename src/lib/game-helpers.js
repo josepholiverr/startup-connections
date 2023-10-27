@@ -123,6 +123,48 @@ export function isGuessesFromGame({ gameData, submittedGuesses }) {
 
 export const generateEmojiGrid = (gameData, submittedGuesses) => {
   const wordToDifficultyMap = {};
+  const tiles = getDivTiles();
+
+  const numCategories = gameData.length;
+  const allWords = [];
+  for (let i = 0; i < numCategories; i++) {
+    allWords.push(gameData[i].words);
+
+    let difficulty = gameData[i].difficulty;
+    gameData[i].words.map((word) => (wordToDifficultyMap[word] = difficulty));
+  }
+
+  const allEmojiRowsArray = [];
+
+  for (let i = 0; i < submittedGuesses.length; i++) {
+    const submittedGuess = submittedGuesses[i];
+
+    let wordDifficultiesArray = submittedGuess.map(
+      (word) => wordToDifficultyMap[word]
+    );
+
+    const emojiRowForGuess = wordDifficultiesArray.map((wordDifficulty) => {
+      const tileColor = tiles[wordDifficulty - 1];
+      return <div style={{ backgroundColor: tileColor, width: '32px', height: '32px', marginRight:'2px', margintop:'2px', borderRadius: '4px' }} />;
+    });
+
+    allEmojiRowsArray.push(<div className="flex">{emojiRowForGuess}</div>);
+  }
+
+  return allEmojiRowsArray;
+};
+
+export function getDivTiles() {
+  let tiles = [];
+  tiles.push("#a0c35a"); // Green
+  tiles.push("#f9df6d"); // Yellow
+  tiles.push("#ba81c5"); // Purple
+  tiles.push("#b0c4ef"); // Blue
+  return tiles;
+}
+
+export const generateEmojiString = (gameData, submittedGuesses) => {
+  const wordToDifficultyMap = {};
   const tiles = getEmojiTiles();
 
   const numCategories = gameData.length;

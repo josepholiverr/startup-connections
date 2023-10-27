@@ -1,0 +1,125 @@
+/*
+  Theme and global variables
+*/
+
+html {
+  overflow-y: scroll;
+
+  --game-spacing: 32px;
+  --header-height: 4rem;
+
+  --color-success: hsl(150deg 70% 30%);
+  --color-warning: hsl(50deg 100% 30%);
+  --color-error: hsl(0deg 70% 45%);
+  --color-gray-100: hsl(0deg 0% 10%);
+  --color-gray-300: hsl(0deg 0% 25%);
+  --color-gray-500: hsl(0deg 0% 50%);
+  --color-gray-700: hsl(0deg 0% 75%);
+  --color-gray-900: hsl(0deg 0% 90%);
+}
+
+/*
+    Custom styles
+  */
+body {
+  font-family: sans-serif;
+}
+
+@media (max-height: 600px) {
+  body {
+    --game-spacing: 8px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  display: flex;
+  height: var(--header-height);
+  border-bottom: 1px solid var(--color-gray-700);
+  color: var(--color-gray-300);
+}
+
+header .side {
+  width: var(--header-height);
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  flex: 1;
+  font-size: 2rem;
+  line-height: var(--header-height);
+  text-align: center;
+}
+
+@media (max-width: 25rem) {
+  h1 {
+    font-size: 1.25rem;
+  }
+}
+
+.game-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--game-spacing);
+  padding-top: 16px;
+  padding-bottom: var(--game-spacing);
+  padding-left: var(--game-spacing);
+  padding-right: var(--game-spacing);
+  margin: 0 auto;
+  min-width: max(300px, 55vh, 40%);
+  max-width: min(500px, 58vh, 100%);
+}
+
+.banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px;
+  text-align: center;
+  animation: slideUp 750ms cubic-bezier(0, 0.72, 0.24, 1.02);
+  border-radius: 4px 4px 0px 0px;
+  will-change: transform;
+}
+
+.happy.banner {
+  background: var(--color-success);
+  color: white;
+}
+.sad.banner {
+  background: var(--color-error);
+  color: white;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+/*
+    Keyframe animations
+  */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}

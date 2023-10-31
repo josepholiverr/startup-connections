@@ -207,16 +207,21 @@ h1 {
 }.pz-module {
   flex: 1 1 auto;
   margin: 12px;
-}.pz-game-title-bar .pz-game-title {
+}
+.full-width-header {
+  width: 100%;
+}
 
+.pz-game-title-bar .pz-game-title {
   font-size: 32px;
-  font-style: normal; 
+  font-style: normal;
   font-weight: bold;
- 
   margin-right: 16px;
-}.pz-game-title-bar .pz-game-date {
-  
-  font-style: light;
+  display: block;  /* Make it block-level to take full width */
+}
+
+.pz-game-title-bar .pz-game-date {
   font-size: 18px;
   font-weight: 300;
+  display: block;  /* Make it block-level to take full width */
 }

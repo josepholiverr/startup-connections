@@ -71,8 +71,8 @@ COPY server.js ./server.js
 
 USER nextjs
 
-EXPOSE 3000
+EXPOSE 8080
 
-ENV PORT 3000
+ENV PORT 8080
 
 CMD ["node", "server.js"]

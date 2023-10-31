@@ -23,8 +23,8 @@ function NumberOfMistakesDisplay() {
   return (
     <>
     <div className="flex flex-wrap justify-center">
-    <p className="text-base -mr-3">Mistakes Remaining: </p>
-    <div className="flex flex-row gap-x-4 justify-center">
+    <p className="text-base">Mistakes Remaining: </p>
+    <div className="flex flex-row gap-x-4 justify-center ml-1">
      
       {mistakeRange.map((el) => (
         <SingleMistakeDisplay key={el} isUsed={el < numMistakesUsed} />

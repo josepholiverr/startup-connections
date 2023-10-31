@@ -4,27 +4,27 @@ export const CONNECTION_GAMES = [
       category: "B2B SaaS",
       words: ["Salesforce", "ZoomInfo", "CareFeed", "Slack"],
       difficulty: 1,
-      imageSrc: "https://i.ibb.co/Gn36Ypb/Connections-1.png",
+      
     },
     {
       category: "Maket Cap Over $1 Trillion",
       words: ["Apple", "Amazon", "Microsoft", "Nvidia"],
       difficulty: 2,
-      imageSrc: "https://i.ibb.co/3B44zXX/Connections-2.png",
+      
     },
     {
       category: "Associated with Peter Thiel",
       words: ["Facebook", "Palantir", "Founders Fund", "PayPal"],
       difficulty: 3,
-      imageSrc: "https://i.ibb.co/4MwD7zv/Connections-3.png",
+      
     },
 
     {
       category: "YC Backed",
       words: ["Reddit", "DoorDash", "Instacart", "Stripe"],
       difficulty: 4,
-      imageSrc:
-        "https://i.ibb.co/V2vnr5P/boys2men-2-d53afdddf480401fac1204a3954aa5f6.webp",
+    
+        
     },
   ],
   [

@@ -6,12 +6,23 @@ steps:
       - '-t'
       - 'gcr.io/$PROJECT_ID/$_APP_NAME'
       - '--build-arg'
+      - 'NEXT_PUBLIC_FIREBASE_API_KEY=$_API_KEY'
+      - '--build-arg'
+      - 'NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=$_AUTH_DOMAIN'
+      - '--build-arg'
+      - 'NEXT_PUBLIC_FIREBASE_PROJECT_ID=$_PROJECT_ID'
+      - '--build-arg'
+      - 'NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=$_STORAGE_BUCKET'
+      - '--build-arg'
+      - 'NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=$_MESSAGING_SENDER_ID'
+      - '--build-arg'
+      - 'NEXT_PUBLIC_FIREBASE_APP_ID=$_APP_ID'
       - '.'  # Add this line to specify the build context directory
     
 
   # Push the container image to Google Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/companyconnections/companyconnections']
+    args: ['push', 'gcr.io/$PROJECT_ID/$_APP_NAME']
 
   # Deploy the container image to Google Cloud Run
   - name: 'gcr.io/cloud-builders/gcloud'

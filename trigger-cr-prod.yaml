@@ -5,7 +5,14 @@ github:
   owner: josepholiverr
   name: startup-connections 
   push:
-    branch: ^main$
+    branch: ^prod$
 substitutions:
   _REGION: us-central1
   _APP_NAME: companyconnections
+  _BRANCH_NAME: main
+  _API_KEY: AIzaSyDjsAVHPRsx8APNrA3KjY4I-ctZqlOkdKo
+  _AUTH_DOMAIN: companyconnections.firebaseapp.com
+  _PROJECT_ID: companyconnections
+  _STORAGE_BUCKET: companyconnections.appspot.com
+  _MESSAGING_SENDER_ID: '727240909434'
+  _APP_ID: 1:727240909434:web:4ab7535958ea72123f11c3

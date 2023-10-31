@@ -5,7 +5,7 @@ github:
   owner: josepholiverr
   name: startup-connections 
   push:
-    branch: ^prod$
+    branch: ^main$
 substitutions:
   _REGION: us-central1
   _APP_NAME: companyconnections

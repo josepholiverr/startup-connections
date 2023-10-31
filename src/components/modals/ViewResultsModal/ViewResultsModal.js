@@ -16,11 +16,11 @@ function ViewResultsModal() {
     <BaseModal
       title=""
       trigger={
-        <Button variant="submit" className="w-full" children={"View Results"} />
+        <Button variant="secondary"  children={"View Results"} />
       }
       initiallyOpen={false}
       showActionButton={false}
-      footerElements={<ShareScoreButton buttonText={"Share Your Score!"} />}
+      footerElements={<ShareScoreButton  buttonText={"Share Your Score!"} />}
     >
        <div className="flex flex-col items-center justify-center place-content-center">
         <p className="text-center font-[600]">

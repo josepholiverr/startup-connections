@@ -56,12 +56,11 @@ function WordButton({ word, fullCandidateSize }) {
   return (
     <Toggle
       className={`${styles.growShrink} select-none py-12 bg-greay-50`}
-      
       pressed={isSelected}
       onClick={flipSelection}
     >
       <p
-        style={{ fontSize: getFontSize(word) }}
+       
         className=" uppercase sm:text-base md:text-lg font-bold"
       >
         {word}

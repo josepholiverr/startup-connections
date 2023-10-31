@@ -29,7 +29,7 @@ function ShareScoreButton({ buttonText = "Share Score", className = "" }) {
     <Sparkles>
       <Button
         className={cn(className, "w-full rounded-md p-6 font-bold")}
-        variant="share"
+        variant="secondary"
         onClick={() =>
           shareStatus(
             gameData,

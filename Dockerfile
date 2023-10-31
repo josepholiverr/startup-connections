@@ -64,8 +64,6 @@ RUN adduser --system --uid 1001 nextjs
 
 COPY --from=builder /app/dist ./dist
 
-USER nextjs
-
 EXPOSE 3000
 
 ENV PORT 3000

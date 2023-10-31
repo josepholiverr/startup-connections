@@ -11,7 +11,7 @@ steps:
 
   # Push the container image to Google Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/$PROJECT_ID/$_APP_NAME']
+    args: ['push', 'gcr.io/companyconnections/companyconnections']
 
   # Deploy the container image to Google Cloud Run
   - name: 'gcr.io/cloud-builders/gcloud'
@@ -26,4 +26,5 @@ steps:
       - '--region'
       - '$_REGION'
       - '--allow-unauthenticated'
-     
+      - '--set-env-vars'
+      - 'NEXT_PUBLIC_API_KEY=$_API_KEY,NEXT_PUBLIC_AUTH_DOMAIN=$_AUTH_DOMAIN,NEXT_PUBLIC_PROJECT_ID=$_PROJECT_ID,NEXT_PUBLIC_STORAGE_BUCKET=$_STORAGE_BUCKET,NEXT_PUBLIC_MESSAGING_SENDER_ID=$_MESSAGING_SENDER_ID,NEXT_PUBLIC_APP_ID=$_APP_ID'

@@ -26,16 +26,13 @@ function InfoModal() {
         <TabsContent value="how-to-play">
           {" "}
 
-          <h2 className="font-bold mt-4">Find groups of four items that share something in common.</h2>
+          <h2 className="font-bold mt-4">Find groups of companies that share something in common.</h2>
           <ul style={{ listStyleType: 'disc' }}>
             <li className="ml-4">Select four items and tap 'Submit' to check if your guess is correct.</li>
             <li className="ml-4">Find the groups without making 4 mistakes!</li>
           </ul>
-          <h2 className="font-bold mt-4">Find groups of four items that share something in common.</h2>
-          <ul style={{ listStyleType: 'disc' }}>
-            <li className="ml-4">Select four items and tap 'Submit' to check if your guess is correct.</li>
-            <li className="ml-4">Find the groups without making 4 mistakes!</li>
-          </ul>
+          
+          
           <p className="mt-4">Each group is assigned a color, which will be revealed as you solve: </p>
 
           <div class="flex flex-col help-emojis mt-0.5 ml-4">
@@ -63,82 +60,33 @@ function InfoModal() {
         <TabsContent value="about-us">
           {" "}
           
-                This project is brought to you by andcomputers, feel free to
-                subscribe to our writing and other experiments.{" "}
+                This project is brought to you by Trey Wall and Joseph Oliver.
+                {" "}
                 <a
                   href="https://andcomputers.io/"
                   target="_blank"
                   className="underline font-bold"
                 >
-                  Check out our writing here.
+                  Check out our startups.
                 </a>
            
            
-                <p className="mb-1">If you'd like to support feel free!</p>
+               
                 <ul className="list-disc">
                   <li>
-                    <p>Help us make an upcoming puzzle by </p>
+                    <p>Get in touch with us </p>
                     <a
-                      href="mailto:jcp@mail.andcomputers.io"
+                      href="mailto:twall7@fordham.edu"
                       target="_blank"
                       className="underline font-bold"
                     >
-                      emailing the team.
+                      here.
                     </a>
                   </li>
-                  <li>
-                    <p className="mt-2 mb-1">Help us pay for servers & time:</p>
-                    <ul>
-                      <li>
-                        {" "}
-                        - One-time contribution via{" "}
-                        <a
-                          href="https://donate.stripe.com/6oEeXQ8TW6xZfks7ss"
-                          target="_blank"
-                          className="underline font-bold"
-                        >
-                          Stripe.
-                        </a>
-                      </li>
-                      <li>
-                        {" "}
-                        - Recurring contributions via{" "}
-                        <a
-                          href="https://www.patreon.com/andcomputers"
-                          target="_blank"
-                          className="underline font-bold"
-                        >
-                          Patreon.
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
+                  
                 </ul>
            
-                <div className="grid grid-flow-row">
-                  <p>Just a few! </p>
-                  <a
-                    href="https://andcomputers.io/"
-                    target="_blank"
-                    className="underline font-bold"
-                  >
-                    - Our writing and thoughts are here.
-                  </a>
-                  <a
-                    href="https://blacktwitter.io/"
-                    target="_blank"
-                    className="underline font-bold"
-                  >
-                    - BlackTwitter
-                  </a>
-                  <a
-                    href="https://blackwords.andcomputers.io/"
-                    target="_blank"
-                    className="underline font-bold"
-                  >
-                    - Black Wordle
-                  </a>
-                </div>
+               
              
         </TabsContent>
       </Tabs>

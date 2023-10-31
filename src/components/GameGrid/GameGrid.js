@@ -13,7 +13,7 @@ import { Badge } from "../ui/badge";
 
 function WordRow({ words }) {
   return (
-    <div className={`grid grid-cols-4 gap-4`}>
+    <div className={`grid grid-cols-4 lg:gap-4 gap-2`}>
       {words.map((word) => (
         <WordButton key={word} word={word} fullCandidateSize={words.length} />
       ))}

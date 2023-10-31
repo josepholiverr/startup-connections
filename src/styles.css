@@ -258,7 +258,7 @@ h1 {
 
 @media (max-width: 768px), (max-height: 600px) {
   body {
-    --game-spacing: 4px;
+    --game-spacing: 8px;
   }
 
   header {
@@ -272,7 +272,7 @@ h1 {
   .game-wrapper {
     flex: 1;
     gap: var(--game-spacing);
-    padding: 4px; /* Reduce padding */
+    padding: 8px; /* Reduce padding */
     min-width: 100%; /* Take full width */
     max-width: 100%; /* Take full width */
   }

@@ -49,8 +49,8 @@ export function SolvedWordRow({ ...props }) {
   return (
     <animated.div style={springProps}>
     <div style={{ backgroundColor: color, borderRadius: 8 }}>
-      <p className="font-bold pt-2 pl-4 text-center">{props.category}</p>
-      <p className="font-thin pb-2 pl-4 text-center">{props.words.join(", ")}</p>
+      <p className="font-bold pt-4 pl-4 text-center uppercase">{props.category}</p>
+      <p className="font-thin pb-4 pl-4 text-center uppercase">{props.words.join(", ")}</p>
     </div>
   </animated.div>
   );

@@ -63,7 +63,7 @@ function Game() {
   return (
     <>
       <h3 className="text-xl text-center mt-4">
-        Create {numCategories} groups of {categorySize}
+        Create four groups of four!
       </h3>
 
       <div className={`game-wrapper`}>

@@ -62,6 +62,8 @@ ENV NODE_ENV production
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
+COPY --from=deps /app/node_modules ./node_modules  # <-- Add this line
+
 COPY --from=builder /app/dist ./dist
 COPY server.js ./server.js
 

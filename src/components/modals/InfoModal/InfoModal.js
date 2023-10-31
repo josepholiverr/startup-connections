@@ -31,8 +31,8 @@ function InfoModal() {
             <li className="ml-4">Select four items and tap 'Submit' to check if your guess is correct.</li>
             <li className="ml-4">Find the groups without making 4 mistakes!</li>
           </ul>
-          
-          
+
+
           <p className="mt-4">Each group is assigned a color, which will be revealed as you solve: </p>
 
           <div class="flex flex-col help-emojis mt-0.5 ml-4">
@@ -59,35 +59,38 @@ function InfoModal() {
         </TabsContent>
         <TabsContent value="about-us">
           {" "}
-          
-                This project is brought to you by Trey Wall and Joseph Oliver.
-                {" "}
-                <a
-                  href="https://andcomputers.io/"
-                  target="_blank"
-                  className="underline font-bold"
-                >
-                  Check out our startups.
-                </a>
+
+          This project is brought to you by Trey Wall and Joseph Oliver.
+          {" "}
+          <div className="mt-1 font-bold">
+
+            Check out our startups:
+            <ul style={{ listStyleType: 'disc' }}>
+              <li className="ml-4 font-normal"><a className="underline" href="https://www.campusintro.com/"
+                target="_blank">Campus Intro </a> - Trey</li>
+              <li className="ml-4 font-normal"> <a className="underline" href="https://www.deepshot.ai/"
+                target="_blank">Deepshot</a> - Joseph</li>
+              <li className="ml-4 font-normal"><a className="underline" href="https://www.pilotcincy.com/"
+                target="_blank">Pilot</a> - Joseph & Trey</li>
+            </ul>
+          </div>
+
+
+      
+              <p className="mt-3">Or get in touch with us  <a
+                href="mailto:twall7@fordham.edu"
+                target="_blank"
+                className="underline font-bold"
+              >
+                here.
+              </a> </p>
            
-           
-               
-                <ul className="list-disc">
-                  <li>
-                    <p>Get in touch with us </p>
-                    <a
-                      href="mailto:twall7@fordham.edu"
-                      target="_blank"
-                      className="underline font-bold"
-                    >
-                      here.
-                    </a>
-                  </li>
-                  
-                </ul>
-           
-               
-             
+       
+
+       
+
+
+
         </TabsContent>
       </Tabs>
     </BaseModal>

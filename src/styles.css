@@ -214,14 +214,30 @@ h1 {
 
 .pz-game-title-bar .pz-game-title {
   font-size: 32px;
-  font-style: normal;
+  font-style: normal; 
   font-weight: bold;
   margin-right: 16px;
-  display: block;  /* Make it block-level to take full width */
 }
 
 .pz-game-title-bar .pz-game-date {
+  font-style: light;
   font-size: 18px;
   font-weight: 300;
-  display: block;  /* Make it block-level to take full width */
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .mobile-header {
+    border-top: none;
+  }
+
+  .pz-game-title-bar {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px; /* Adding bottom padding */
+  }
+
+  .pz-game-title-bar .pz-game-date {
+    display: block; /* Making it block level */
+  }
 }

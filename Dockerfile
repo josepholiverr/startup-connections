@@ -34,6 +34,8 @@ RUN \
   else echo "Lockfile not found." && exit 1; \
   fi
 
+# Debug: List the contents of /app to verify node_modules exists
+RUN ls -al /app
 
 # Rebuild the source code only when needed
 FROM base AS builder
@@ -62,7 +64,7 @@ ENV NODE_ENV production
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-COPY --from=deps /app/node_modules ./node_modules  # <-- Add this line
+COPY --from=deps /app/node_modules ./node_modules 
 
 COPY --from=builder /app/dist ./dist
 COPY server.js ./server.js

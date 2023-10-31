@@ -27,54 +27,5 @@ export const CONNECTION_GAMES = [
         
     },
   ],
-  [
-    {
-      category: "Countries in West Africa",
-      words: ["Nigeria", "Cameroon", "Togo", "Benin"],
-      difficulty: 1,
-    },
-    {
-      category: "Countries in East Africa",
-      words: ["Tanzania", "Kenya", "Ethiopia", "Somalia"],
-      difficulty: 2,
-    },
-    {
-      category: "Countries in North Africa",
-      words: ["Morocco", "Algeria", "Tunisia", "Libya"],
-      difficulty: 3,
-    },
-    {
-      category: "African Islands",
-      words: ["Madagascar", "Mauritius", "Comoros", "Mayotte"],
-      difficulty: 4,
-    },
-  ],
-  [
-    {
-      category: "California Rappers",
-      words: ["O'Shea", "Eric", "Lesane", "Todd"],
-      difficulty: 1,
-      imageSrc:
-        "https://i.discogs.com/_6S_T2JFzUkXiFTQR_293P-4oCkI4o4_CvRCmDidvqI/rs:fit/g:sm/q:90/h:600/w:584/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTY4NzEx/OC0xNTEyMjA3Njkz/LTYyNzMuanBlZw.jpeg",
-    },
-    {
-      category: "Liquor Brands Owned by Rap Artists",
-      words: ["D'ussé", "Effen", "Belair", "Ciroc"],
-      difficulty: 2,
-      imageSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToL3q2acAIfM-Co_IcAtPCcc4yslTGSdhDgg&usqp=CAU",
-    },
-    {
-      category: "Hair Styles",
-      words: ["Bob", "Weave", "Fade", "Taper"],
-      difficulty: 3,
-    },
-
-    {
-      category: "Black Mayors",
-      words: ["Bass", "Turner", "Adams", "Washington"],
-      difficulty: 4,
-      imageSrc: "https://i.ibb.co/pP1xn0Z/Connections.png",
-    },
-  ],
+ 
 ];

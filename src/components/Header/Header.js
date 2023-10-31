@@ -14,13 +14,13 @@ function Header() {
   const formattedDate = new Intl.DateTimeFormat('en-US', options).format(est);
 
   return (
-    <header className="flex justify-between mt-12 full-width-header">
+    <header className="flex justify-between mt-12 mobile-header">
     <div className="ml-6 pb-1 pz-game-title-bar">
       <div>
-        <h2 className="pt-2">
-          <em className="pz-game-title">Company Connections</em>
-        </h2>
+      <h2 className="pt-2 flex align-baseline">
+        <em className="pz-game-title">Company Connections</em>
         <span className="pz-game-date">{formattedDate}</span>
+      </h2>
       </div>
     </div>
     <InfoModal className=""/>

@@ -189,10 +189,7 @@ h1 {
   align-items: center;
   height: 20px;
 }
-.pz-game-title-bar {
-  
-  padding-bottom: 4px;
-}
+
 .pz-row {
   margin: 0 auto;
   max-width: 1280px;
@@ -212,6 +209,22 @@ h1 {
   width: 100%;
 }
 
+.pz-game-title-bar h2 {
+  display: flex;
+  align-items: baseline;
+}
+
+.pz-game-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.pz-game-date {
+  font-size: 18px;
+  font-weight: 300;
+}
+
 .pz-game-title-bar .pz-game-title {
   font-size: 32px;
   font-style: normal; 
@@ -224,17 +237,17 @@ h1 {
   font-size: 18px;
   font-weight: 300;
 }
-
 /* Mobile-specific styles */
 @media (max-width: 768px) {
   .mobile-header {
     border-top: none;
+    height: auto; /* Auto-adjust the height */
+    padding-bottom: 20px; /* Add padding to the bottom of the header */
   }
 
-  .pz-game-title-bar {
-    display: flex;
+  .pz-game-title-bar h2 {
     flex-direction: column;
-    padding-bottom: 20px; /* Adding bottom padding */
+    align-items: flex-start;
   }
 
   .pz-game-title-bar .pz-game-date {

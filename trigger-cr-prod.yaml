@@ -1,0 +1,11 @@
+name: companyconnections
+description: Trigger prod build/deploy
+filename: cloudbuild.yaml
+github:
+  owner: josepholiverr
+  name: startup-connections 
+  push:
+    branch: ^prod$
+substitutions:
+  _REGION: us-central1
+  _APP_NAME: companyconnections

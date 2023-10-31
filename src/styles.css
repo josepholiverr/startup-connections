@@ -241,3 +241,26 @@ h1 {
     display: block; /* Making it block level */
   }
 }
+
+
+@media (max-width: 768px), (max-height: 600px) {
+  body {
+    --game-spacing: 8px;
+  }
+
+  header {
+    height: 3rem; /* Reduce header height */
+  }
+
+  h1 {
+    font-size: 1rem; /* Reduce font size for header title */
+  }
+
+  .game-wrapper {
+    flex: 1;
+    gap: var(--game-spacing);
+    padding: 8px; /* Reduce padding */
+    min-width: 100%; /* Take full width */
+    max-width: 100%; /* Take full width */
+  }
+}

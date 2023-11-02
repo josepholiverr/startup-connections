@@ -116,7 +116,7 @@ function Game() {
           </ul>
           <h2 className="font-bold mt-4">Category Example</h2>
           <ul style={{ listStyleType: 'disc' }}>
-            <li className="ml-4">TECH IN NYC: IBM, Yext, Kickstarter, Hugging Face</li>
+            <li className="ml-4">B2B SaaS: Salesforce, Slack, Hubspot, Adobe</li>
            
           </ul>
         
